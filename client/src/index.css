@@ -1,9 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import "tailwindcss";
-:root {
-  font-family: 'Yeseva One', serif;
-}
-
-body {
-  background-color: #ffcc66;
-}
