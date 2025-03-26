@@ -39,7 +39,7 @@ const HeroSection = () => {
       
       {/* Left Side: Text Content */}
       <div className="max-w-lg z-10 md:mt-0 mt-16">
-        <h1 className="text-6xl font-bold leading-tight">TROPICUBAN BITES</h1>
+        <h1 className="text-6xl font-bold leading-tight">TROPICUBAN CAFE</h1>
         <p className="italic text-lg mt-4">
           The bold flavors of Cuba, stacked between two slices of perfection.
         </p>
