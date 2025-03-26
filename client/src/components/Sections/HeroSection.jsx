@@ -15,7 +15,7 @@ const HeroSection = () => {
         relative
       "
       style={{
-        backgroundImage: "url('public/Cuban-Sandwich-one-removebg.png'), url('/public/palmtreeleaves.webp')",
+        backgroundImage: "url('/HeroSandwich.png'), url('/palmtreeleaves.webp')",
         // Keep image size consistent regardless of screen size:
         backgroundSize: "800px auto, 120px auto",
         backgroundPosition: "right 20px top 1px, left top 100px",
