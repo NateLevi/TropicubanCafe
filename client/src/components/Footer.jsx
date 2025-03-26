@@ -10,7 +10,7 @@ const Footer = () => {
       <div 
         className="absolute bottom-0 right-0 w-[120px] h-[120px] bg-no-repeat"
         style={{
-          backgroundImage: "url('/public/palmtreeleaves.webp')",
+          backgroundImage: "url('/palmtreeleaves.webp')",
           backgroundSize: "120px auto",
           transform: "scaleX(-1) scaleY(-1)", // Horizontal flip
           backgroundPosition: "bottom ",
