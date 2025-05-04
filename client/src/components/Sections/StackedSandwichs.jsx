@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 
 const StackedSandwich = () => {
-  const [position, setPosition] = useState(-700); // Start with initial offset to the right
+  const [position, setPosition] = useState(-10); // Start with initial offset to the right
   const prevScrollY = useRef(0);
 
   useEffect(() => {
@@ -10,15 +10,15 @@ const StackedSandwich = () => {
       
       // Smaller increment for smoother movement
       const scrollDifference = currentScrollY - prevScrollY.current;
-      const moveAmount = scrollDifference * 0.1; // Reduced multiplier for less movement
+      const moveAmount = scrollDifference * 0.1; 
       
       // Scroll direction and adjust position with more limited range
       if (currentScrollY > prevScrollY.current) {
-        // Scrolling down - move right but with a smaller maximum
-        setPosition(prev => Math.min(prev + moveAmount, -400)); // Reduced maximum right position
+        // Scrolling down - move right but with a much smaller maximum
+        setPosition(prev => Math.min(prev + moveAmount, -100)); 
       } else {
-        // Scrolling up - move left
-        setPosition(prev => Math.max(prev + moveAmount, -700)); // Keep the same minimum left position
+        // Scrolling up - move left but not too far
+        setPosition(prev => Math.max(prev + moveAmount, -120)); 
       }
       
       prevScrollY.current = currentScrollY;
