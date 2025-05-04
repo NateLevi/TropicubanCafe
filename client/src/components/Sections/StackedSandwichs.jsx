@@ -15,7 +15,7 @@ const StackedSandwich = () => {
       // Scroll direction and adjust position with more limited range
       if (currentScrollY > prevScrollY.current) {
         // Scrolling down - move right but with a smaller maximum
-        setPosition(prev => Math.min(prev + moveAmount, -500)); // Reduced maximum right position
+        setPosition(prev => Math.min(prev + moveAmount, -400)); // Reduced maximum right position
       } else {
         // Scrolling up - move left
         setPosition(prev => Math.max(prev + moveAmount, -700)); // Keep the same minimum left position
