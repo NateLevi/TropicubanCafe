@@ -2,7 +2,7 @@
 const PhotoSection = () => {
     return (
       <section
-        className="h-screen bg-center bg-cover bg-fixed bg-no-repeat"
+        className="h-[50vh] lg:h-screen bg-center bg-cover bg-scroll lg:bg-fixed bg-no-repeat"
         style={{
           backgroundImage: "url('/maincuban.jpg')",
         }}

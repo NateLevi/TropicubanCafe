@@ -19,10 +19,10 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full py-15 px-4 text-[#5C3D2E]">
+    <section className="relative w-full lg:py-15 px-4 text-[#5C3D2E]">
       <div className="absolute inset-0 flex">
-        <div className="w-1/2 bg-white" />
-        <div className="w-1/2 overflow-hidden">
+        <div className="w-full lg:w-1/2 bg-white" />
+        <div className="w-1/2 overflow-hidden hidden lg:block">
           <img
             ref={imgRef}
             src="/cuba.jpg"
@@ -33,10 +33,10 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="relative max-w-6xl mx-auto flex items-center px-10">
-        <div className="w-1/2 pr-8">
-          <h1 className="text-3xl font-bold mb-4">ABOUT US</h1>
-          <div className="space-y-4 text-sm">
+      <div className="relative max-w-6xl mx-auto flex items-center px-4 lg:px-10">
+        <div className="w-full lg:w-1/2 pr-0 lg:pr-8">
+          <h1 className="text-3xl font-bold mb-4 mt-4">ABOUT US</h1>
+          <div className="space-y-4 text-xs sm:text-sm">
             <p>
               Established in 2015, Tropicuban is St. Petersburg's hidden gem for authentic Cuban cuisine. Our family-owned sandwich shop brings the vibrant flavors of Havana to Florida's Gulf Coast.
             </p>
@@ -48,6 +48,14 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="block lg:hidden mt-8 -mx-4 relative z-10"> 
+        <img 
+          src="/cuba.jpg" 
+          alt="Cuba street scene" 
+          className="w-full h-full object-cover" 
+        />
       </div>
     </section>
   );
