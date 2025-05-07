@@ -1,4 +1,4 @@
-TropicubanCafe is a fully functional demo website I built for a local Cuban cafe — although the cafe has since closed, I’ve left the live demo up on Netlify to showcase my full‑stack skills in React, Vite, Tailwind, and Firebase.
+TropicubanCafe is a fully functional demo website I built for a local Cuban cafe — the live demo up on Netlify to showcase my full‑stack skills in React, Vite, Tailwind, and Firebase.
 
 # Tech used: [![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,js,react,vite,firebase)](https://skillicons.dev)
 
