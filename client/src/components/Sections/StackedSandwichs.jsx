@@ -82,9 +82,13 @@ const StackedSandwich = () => {
       baseTranslateX = 300;
       baseTranslateY = -50;
       scale = 0.7;
+    } else if (windowWidth <= 1280) { // Browser screens (Desktops/Laptops > 1024px)
+      // Adjusted offset for larger screens to prevent moving too far left
+      baseTranslateX = 280;
+      scale = 0.8;
     } else { // Browser screens (Desktops/Laptops > 1024px)
       // Adjusted offset for larger screens to prevent moving too far left
-      baseTranslateX = 300;
+      baseTranslateX = 400;
       scale = 0.8;
     }
 
@@ -99,7 +103,7 @@ const StackedSandwich = () => {
   };
 
   return (
-    <div className="w-full -mt-75 -mb-80 md:-mb-45 sm:-mb-40 xs:-mb-50">
+    <div className="w-500p -mt-95 -mb-80 md:-mb-45 sm:-mb-40 xs:-mb-50 -ml-50">
       <div className="w-full overflow-hidden relative z-10">
         <div className="relative max-w-full mx-auto" style={{ marginTop: "-30px" }}>
           <img
